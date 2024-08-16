@@ -1,12 +1,18 @@
+// ignore_for_file: avoid_unnecessary_containers
+
 import 'dart:async';
 
+import 'package:doctor_app/src/utils/routes/routes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class Splash extends StatelessWidget {
+  const Splash({super.key});
+
   @override
   Widget build(BuildContext context) {
     Timer(const Duration(seconds: 3), () {
-      print('object');
+      Get.offAndToNamed(Routes.signIn);
     });
     return Scaffold(
         backgroundColor: Colors.grey.shade50,

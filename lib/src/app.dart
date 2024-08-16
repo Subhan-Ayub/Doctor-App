@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
 
       theme: ThemeData(
-          // fontFamily: 'Popins',
+          fontFamily: 'Rubik',
           ),
       initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,
